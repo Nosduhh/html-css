@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font: normal 16px arial, verdana, serif;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+h1#principal{
+    text-align: center;
+}
+p#loren{
+    background-color:#2A8C82;
+    color: rgb(255, 253, 253);
+}
+h3#text{
+    text-align: center;
+}
+.titulo{
+    background-color: #9BF2EA;
+    color: black;
+    text-align: center;
+}

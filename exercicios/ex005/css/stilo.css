@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a{
+    color: rgb(11, 55, 248);
+    text-decoration: none;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+a:active{
+    color: blueviolet;
+}

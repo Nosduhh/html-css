@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagensjoy/videogame.ico.ico" type="image/x-icon">
+    <title>Gamer boy</title>
+
+    <style>
+        mark{
+            background-color: lawngreen;
+        }
+    </style> <!--Usando um pouco de CSS-->
+
+</head>
+<body>
+    <h1>Paragrafos e quebras de linhas</h1>
+    <hr>
+        <p>Você pode escrever um paragrafo de qualquer jeito. 
+        Basta colocar tudo no meio de par de tags &lt;p&gt; e &lt;/p&gt; </p> 
+        <p>Se precisar quebrar o texto em algum lugar especifico com esse,<br> você pode usar a tag &lt;br&gt;.</p>
+     <p>Vamos adicionar simbolos especiais:
+        &copy;
+        &reg;
+        &trade;
+        &yen;
+        &pound;
+        &cent;
+     </p>
+     <p>Vamos adicionar emojis
+        &#x2764;
+        &#x1F408;
+        &#x1F3C0;
+        <hr>
+        <h1>Hoje é dia de gamer</h1>
+        <hr>
+            <p>Eu e Rian está jogando &#x1F3AE;&trade;</p>
+        <h1>Adicionando imagens no projeto</h1>
+            <p>Agora vamos adicionar imagens para esse projeto.</p>
+        <img src="imagensjoy/controle-full.png" alt="Imagem Controle">
+            <p>Essas imagens foram editadas no gimp. </p>
+        <img src="imagensjoy/joystick-200.png" alt="Imagem Joysticker">
+            <p>Vou está adicionando também imagens com links de outros site.</p>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/game-325-433753.png" alt="Imagem usando Link"> <!--Link URL-->
+        </p>
+     <hr>
+     <h1>Entendendo a hierarquiar dos titulos</h1>
+     <h2>Aqui é um exemplo de titulo &lt;h2&gt;</h2>
+     <h3>Aqui é uma exempl de &lt;h3&gt;</h3>
+     <h4>Aqui mais um exemplo de paragrafo &lt;h4&gt;</h4>
+        <p>A hierarquia dos titulos vão até o nivel &lt;h6&gt;.</p>
+     <hr>
+     <H1>Principais formatações</H1>
+     <h2>Negrito / destaque</h2>
+        <p>Nesta frase temos um <b>termo em negrito,</b> usando a tag &lt;b&gt; (não semantico)</p>
+        <p>Nesta frase temos <strong>um termo destacado</strong> usando o termo &lt;Strong&gt;(semantico) </p>
+     <hr>
+     <h2>Italico / Ênfase</h2>
+        <p>Nesta frase vamos usar <i>um terno em itálico</i> usando a tag &lt;i&gt; (não semantico)</p>
+         <p>Nesta frase vamos usar <em>em Ênfase</em> , usando a tag &lt;em&gt; (semantico)</p>
+     <hr>
+     <h2>Texto marcado</h2>
+        <p>Podemos utilizar também  <mark style="background-color: rgb(134, 224, 107)">texto marcado,</mark>  usando a tag &lt;mark&gt;</p>
+        <p>E no outro paragrado temos <mark>outro texto marcado</mark> no final.</p>
+     <hr>
+     <h2>Texto grande e pequeno</h2>
+        <p>Estamos criando um <big>texto grande</big>, <mark style="background-color: chartreuse"><small>e pequeno nessa frase</small></mark> .</p>
+     <hr>
+     <h1>Texto deletado</h1>
+        <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
+     <h2>Texto inserido</h2>
+        <p>Podemos marcar <ins>um texto com inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. </p>
+     <h2>Texto subescrito</h2>
+        <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+     <h2>Texto subscrito</h2>
+         <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+     <hr>
+     <H1>Outras formatações</H1>
+     <h2>Condigo-fonte</h2>
+         <p>O <code>document.getElementbyId</code> ('teste') é escrito em linguagem JavaScrip.</p>
+     <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'número {num} é PAR')
+    Else:
+        print(f"número {num} é impar")
+    print("Fim do programa")<!--Esse codigo foi desenvolvido em Phyton como exemplo-->
+        </code>
+    </pre>
+    <h2>Citações</h2>
+        <p>Como diria um pai de um amigo: <q>O computador é um burro  muito rápido.</q></p>
+    <h2>Citações completas</h2>
+        <p>Segundo uma frase de Carl Max, no seu livro o ulitmo suicidio ele diz.</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Sobre_o_suic%C3%ADdio/9uS5ACGNA0EC?hl=pt-BR&gbpv=1&dq=karl+max&printsec=frontcover">
+        É preciso ter em conta que o romantismo não é somente uma escola literaria.
+    </blockquote>
+    <h2>Abreviações</h2>
+         <p>Meu nome abreviado não da pra entender nada <abbr title="Hudson Gomes Torres"> HGT.
+    </abbr></p>
+    <h2>Textos invertidos</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar sites usando HTML E CSS</bdo></p> 
+    <hr>
+    <h1>Usando lista no site em HTML</h1>
+        <h2>Listas Ordenadas</h2>
+            <p>Usando listas ordenadas, são aquelas que a ordem faz diferença.</p>
+                <ol type="I">
+                    <li>Acordar</li>
+                    <li>Olhar mensagem</li>
+                    <li>Escovar os dentes</li>
+                    <li>Tomar café</li>
+                    <li>Ir para trabalho</li>
+                    <li>Almoçar </li>
+                    <li>Voltar para trabalho</li>
+                    <li>Ir para faculdade</li>
+                    <li>Voltar para casa</li>
+                    <li>Dormir</li>
+                </ol>
+        <h2>Listas não Ordenadas</h2>
+            <p>Aqui vamos usar listas não ordenadas.</p> <!--Usando exemplos de livros-->
+                <ul type="circle">
+                    <li>O anticristo</li>
+                    <li>Por que os gatos são assim</li>
+                    <li>O Cosmo</li>
+                    <li>Turing e o computador</li>
+                    <li>Os planetas</li>
+                </ul>
+        <h2>Listas misturadas</h2>
+                <p>Vamos misturar a lista, utilizando o exemplo dos livros com lista ordenada.</p>
+                    <ol>
+                        <li>Acordar</li>
+                        <li>Escova os dentes</li>
+                            <ol type="I">
+                                <li>O anticristo</li>
+                                <li>O cosmo</li>
+                              </ol>
+                        <li>Tomar café</li>
+                        <li>Descançar</li>
+                              <ol type="I">
+                                <li>Os planetas</li>
+                                <li>Por que os gatos são assim.</li>
+                              </ol>
+                    </ol>
+    <h1>Exercitando um pouco</h1>
+        <h2>Lista dos meus jogos favoritos</h2>            
+            <ul type="disc">
+                <li>Nitendinho</li>
+                    <ol>
+                        <li>Mario Bros</li>
+                            <ul type="square">
+                                <li>Mario bros 3</li>
+                                <li>Mario kart 2</li>
+                            </ul>
+                        <li>RGP</li>
+                            <ul type="square">
+                                <li>Senhor dos aneis</li>
+                                <li>Gengish impact</li>
+                            </ul>
+                    </ol>
+                <li>Playstation</li>
+                    <ol>
+                        <li>Jogos FPS</li>
+                            <ul type="square">
+                                <li>Fortnite</li>
+                                <li>Call of Duty</li>
+                            </ul>
+                    </ol>
+                <li>Jogos mobile</li>
+                    <ol>
+                        <li>Jogos extrategia</li>
+                            <ul type="square">
+                                <li>8ball pool</li>
+                                <li>Clash Royale</li>
+                            </ul>
+                    </ol>
+            </ul>
+            <h2>Lista de definições</h2>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>É uma <mark>linguagem</mark> de marcação para criação de um conteudo do site.</dd>
+                    <dt>CSS</dt>
+                    <dd>Linguagem de marcação para o <mark style="background-color: blueviolet">stilo</mark>  de um site.</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Linguagem de programação para a interatividade de um site.</dd>
+                </dl>
+        <hr>
+        <h1>Trabalhando com links</h1>        
+            <p>Você pode acessar qualquer link de outros sites <A href="https://g1.globo.com/politica/blog/gerson-camarotti/post/2022/08/23/apos-entrevista-no-jn-bolsonaro-sinaliza-intencao-de-ir-a-debater-se-lula-comparecer.ghtml" target="_blank" rel="external"> CLique aqui para ter acesso.</A></p>
+
+            <p>Você também pode acessar links do youtube <A href="https://www.youtube.com/watch?v=kTt8P6BmnB4" target="_blank" rel="external" >Clique aqui</A></p>
+            <h2>Usando links internos</h2>
+            <p>Essa é a primeira pagina do meu index se você querer acessar minha outra pagina <a href="pag002.html" target="_blank" rel="external"> clique aqui.</a></p>
+            <h2>Links para download</h2>
+                <ul>
+                    <li><a href="pdf/emersonGama.pdf" download="emersonGama.pdf" type="application/pdf">Baixar livro em PDF.</a></li>
+                    <li> <a href="pdf/emersonSantos.zip" download="emersonSantos.zip" type="application/zip">Baixar livro em arquivo ZIP.</a></li>
+                </ul>
+
+</body>
+</html>

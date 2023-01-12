@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Vetor02</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1>Cadastro de pessoa</h1>
+    <form>
+      <label class="col-form-label">Nome da uma pessoa:</label>
+      <input type="text" class="form-control" id="nome" placeholder="ex. José">
+      <label class="col-form-label">Idade da uma pessoa:</label>
+      <input type="text" class="form-control" id="idade" placeholder="ex. 25">
+      <label class="col-form-label">Email:</label><br>
+      <input type="text" class="form-control" id="email" placeholder="email@gmail.com"><br>
+
+      <button type="button" class="btn btn-primary mt-4" onclick="_push()">Incluir</button>
+
+      <button type="button" class="btn btn-primary mt-4" onclick="_procura()">Procurar</button>
+
+      <button type="button"  class="btn btn-primary mt-4" onclick="_exclui()">Exclui a
+        pessoa</button><br>
+      
+      <button type="button" class="btn btn-secondary mt-4" onclick="_limpar()">Limpar</button>
+      <button type="button" class="btn btn-primary mt-4" onclick="_shot()">Mostra Vetor</button><br>
+
+      <!--<button type="button" class="btn btn-primary mt-4" onclick="_unshift()">Incluir no início do array</button>
+            <button type="button" class="btn btn-primary mt-4" onclick="_shift()">Remove do início do array</button><br>
+
+      <button type="button" class="btn btn-primary mt-4" onclick="_sort()">Ordena o array</button>-->
+
+    </form>
+  </div>
+  <div id="resposta" class="mt-4">
+
+  </div>
+
+  <!-- JavaScript proprio -->
+  <script src="..\js\vetor.js"></script>
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

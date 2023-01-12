@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body{
+    background-image: linear-gradient(to top,#de9cdfc5,#B390DE);
+    background-attachment: fixed;
+    
+}
+p{
+    text-align: justify;
+}
+main{
+    background-color: white;
+    width: 600px;
+    box-shadow: 5px 5px 5px #796eaa;
+    padding: 10px;
+    margin: auto;
+    border-radius: 3%;
+}
+h1{
+    color: #141118;
+    text-align: center;
+    text-shadow: 1px 1px 2px #2b244d;
+}
+h2{
+    color: #06050c;
+}
+@font-face{
+    font-size: psyco;
+    src: url('psyco'); format('truetype');
+}
+
+div{
+    background-color: #d2cde9;
+    width: 600px;
+    box-shadow: 5px 5px 5px ;
+    padding: 10px;
+    margin: auto;
+    border-radius: 4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
