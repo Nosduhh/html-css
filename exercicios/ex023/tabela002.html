@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+</head>
+<style>
+    body{
+        background-color: rgba(169, 169, 169, 0.397);
+        font-family: Arial, Helvetica, sans-serif
+    }
+    table{
+        width: 300px;
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid black;
+    }
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Hanatomia para tabelas grandes
+            TABLE:
+                THEAD
+                    TR, TD, TH 
+                TBODY
+                     TR, TD, TH 
+                TFOOT
+                     TR, TD, TH 
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th>POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>São Paulo</th>
+                <th class="num">192.323.0</th>
+            </Tr>
+            <tr>
+                <th>Minas Gerais </th>
+                <th class="num">983.237.231</th>
+            </tr>
+            <tr>
+                <th>Brasilia</th>
+                <th class="num">674.387.34</th>
+            </tr>
+            <tr>
+                <th>Amazonas</th>
+                <th class="num">747.883.23</th>
+            </tr>
+            <tr>
+                <th>Maranhão</th>
+                <th class="num">372.834.234</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>TOTAL DE HABITANTES</th>
+                <td class="num">000.000.000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
