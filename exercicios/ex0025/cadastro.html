@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+
+<body>
+    <h1>Exemplo de fprmulario</h1>
+    <form action="cadastro.html" method="get"></form>
+    
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+            <label for="Nome">Nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="40" minlength="5" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </fieldset>
+    <!--Estudar futuramente RegEx-->
+</body>
+
+</html>
