@@ -6,7 +6,25 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="" method="post"></form>
-    
+    <form action="cadastro.php" method="post" autocomplete="off"></form>
+
+    <div>
+        <label for="numb1">Primeiro numero:</label>
+        <input type="number" name="numero" id="numb1" min="0" max="50" required
+        oninput="soma.inneHTML = Number(numb1.vaule) + Number(numb2.vaule)">
+    </div>
+    <div>
+        <label for="numb2">Segundo numero:</label>
+        <input type="number" name="numero" id="numb2" min="0" max="50" required>
+    </div>
+    <div>
+        <label for="soma">Soma:</label>
+        <output id="soma">0</output>
+    </div>
+    <div>
+        <input type="submit" value="Calcular">
+        <input type="reset" value="Limpar">
+    </div>
+
 </body>
 </html>
