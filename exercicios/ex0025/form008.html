@@ -11,15 +11,16 @@
     <div>
         <label for="numb1">Primeiro numero:</label>
         <input type="number" name="numero" id="numb1" min="0" max="50" required
-        oninput="soma.inneHTML = Number(numb1.vaule) + Number(numb2.vaule)">
+        oninput="soma.innerHTML = Number(numb1.value) + Number(numb2.value)">
     </div>
     <div>
         <label for="numb2">Segundo numero:</label>
-        <input type="number" name="numero" id="numb2" min="0" max="50" required>
+        <input type="number" name="numero" id="numb2" min="0" max="50" required
+        oninput="soma.innerHTML = Number(numb1.value) + Number(numb2.value)">
     </div>
     <div>
         <label for="soma">Soma:</label>
-        <output id="soma">0</output>
+        <output name="soma" id="soma">0</output>
     </div>
     <div>
         <input type="submit" value="Calcular">
