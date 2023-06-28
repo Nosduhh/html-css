@@ -6,41 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de formulario</title>
 </head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html,
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        text-align: center;
+        padding: 30px;
+        font-size: 40px;
+    }
+    select {
+        margin: 10px;
+        
+    }
+
+    div.profissao {
+        margin: 10px;
+        
+    }
+
+    div.açoes{
+        margin: 10px;
+    }
+   
+    div.mensagem{
+        margin: 10px;
+        
+    }
+    label#estado{
+        margin: 10px;
+    }
+    fieldset{
+        width: 30px;
+        margin-left: 10px;
+        background-color: rgb(241, 231, 217);
+        
+    }
+    textarea{
+        width: 649px;
+    }
+    input#interativ{
+        width: 20%;
+        height: 30px;
+        border-radius: 10px;
+    }
+    input:hover{
+        background-color: rgb(213, 230, 230);
+    }
+    
+</style>
 
 <body>
+    <h1>Cadastro paciente</h1>
     <form action="cadastro.php" method="post">
-        <div>
-            <label for="estad">Estado:</label>
+        <fieldset>
             
-            <select name="estado" id="estad">
-                <option value="escolha">----Escolha-----</option>
-                <option value="SP">São Paulo</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="Bahia">Bahia</option>
-                <option value="SC">Santa Catarina</option>
-
-            </select>
-
-        </div>
-        <div>
-            <label for="profi">Profissão:</label>
-            <input type="text" name="profissao" id="profi" list="list">
-            <datalist id="list">
-                <option>Administração</option>
-                <option>Dentista</option>
-                <option>Paisagista</option>
-                <option>Desenvolvedor</option>
-                <option>Cinegrafista</option>
-            </datalist>
-        </div>
-        <div>
-            <label for="msg">Mensagem:</label>
-            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </div>
+            <div>
+                <label for="estad" id="estado">Estado:</label>
+                <select name="estado" id="estad">
+                    <option value="escolha">----Escolha-----</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+            </div>
+            <div class="profissao">
+                <label for="profi">Profissão:</label>
+                <input type="text" name="profissao" id="profi" list="list">
+                <datalist id="list">
+                    <option>Administração</option>
+                    <option>Dentista</option>
+                    <option>Paisagista</option>
+                    <option>Desenvolvedor</option>
+                    <option>Cinegrafista</option>
+                </datalist>
+            </div>
+            <div class="mensagem">
+                <label for="msg" id="msg">Mensagem:</label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            </div>
+            <div class="açoes">
+                <input type="submit" value="Enviar" id="interativ">
+                <input type="reset" value="Limpar"  id="interativ">
+            </div>
+        </fieldset>
 
     </form>
 
