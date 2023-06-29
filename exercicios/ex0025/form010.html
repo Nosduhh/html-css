@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    html,
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+
+        <div>
+            <label for="ano">Ano em que você nasceu:</label>
+            <input type="number" name="numero" id="ano" min="1990" max="2023" value="2005" oninput="calidade()">
+
+        </div>
+
+        <div>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </div>
+
+    </form>
+    <script>
+        function calidade() {
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+
+</html>

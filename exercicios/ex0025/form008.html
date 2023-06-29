@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
     <form action="cadastro.php" method="post" autocomplete="off"></form>
 
     <div>
         <label for="numb1">Primeiro numero:</label>
         <input type="number" name="numero" id="numb1" min="0" max="50" required
-        oninput="soma.innerHTML = Number(numb1.value) + Number(numb2.value)">
+            oninput="soma.innerHTML = Number(numb1.value) * Number(numb2.value)"> 
     </div>
     <div>
         <label for="numb2">Segundo numero:</label>
         <input type="number" name="numero" id="numb2" min="0" max="50" required
-        oninput="soma.innerHTML = Number(numb1.value) + Number(numb2.value)">
+            oninput="soma.innerHTML = Number(numb1.value) * Number(numb2.value)">
     </div>
     <div>
         <label for="soma">Soma:</label>
@@ -28,4 +30,5 @@
     </div>
 
 </body>
+
 </html>
