@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="estilo/mediaquery.css">
     <title>Noticia do dia a dia</title>
 </head>
 
-<body>
+<body onresize="mudouTam">
     <header>
         <h1>Meu site</h1>
         <span class="material-symbols-outlined" id="burgue" onclick="clickMenu()">
@@ -27,7 +28,7 @@
     </header>
     <main>
         <article>
-            <h2>Noticias do dia a dia</h2>
+            <h2>Novidades do dia a dia</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto modi provident. Quo corrupti
                 nemo, sint saepe nobis eos odit quod fugiat quam! Ipsam obcaecati odio ducimus rerum nam at. Lorem ipsum
                 dolor sit amet, consectetur adipisicing elit. Dolorum fuga dolorem aliquid, veritatis ipsum illo
@@ -60,6 +61,14 @@
                 itens.style.display = 'block'
             }
 
+        }
+        function mudouTam(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }
+            else{
+                intes.style.display = 'none'
+            }
         }
     </script>
 </body>

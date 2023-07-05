@@ -15,14 +15,14 @@ header>h1{
     text-align: center;
 }
 span#burgue{
-    background-color: rgb(61, 60, 60);
+    padding: 10px;
     display: block;
-    color: white;
-    text-align: center;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 span#burgue:hover{
-    background-color: white;
+    border: 2px black;
+    font-weight: bolder;
     color: black;
 }
 menu{
