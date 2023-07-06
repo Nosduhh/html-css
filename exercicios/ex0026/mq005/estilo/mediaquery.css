@@ -14,3 +14,17 @@
         width: 768px;
     }
 }
+@media screen and (min-width:1440px) and (max-width: 900px) {
+    span#burgue{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    menu{
+        width: 768px;
+    }
+}
